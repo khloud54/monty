@@ -73,10 +73,12 @@ void pop_top(stack_t **stack, unsigned int line_number)
 */
 void print_top(stack_t **stack, unsigned int line_number)
 {
+	stack_t *top_node;
+
 	if (stack == NULL || *stack == NULL)
 		more_err(6, line_number);
 
-	stack_t *top_node = *stack;
+	top_node = *stack;
 
 	printf("%d\n", top_node->n);
 }

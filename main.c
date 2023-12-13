@@ -63,6 +63,8 @@ void free_nodes(void)
 */
 void add_to_queue(stack_t **new_node, __attribute__((unused))unsigned int ln)
 {
+	stack_t *tmp;
+
 	if (new_node == NULL || *new_node == NULL)
 		exit(EXIT_FAILURE);
 
@@ -72,7 +74,7 @@ void add_to_queue(stack_t **new_node, __attribute__((unused))unsigned int ln)
 		return;
 	}
 
-	stack_t *tmp = head;
+	 tmp = head;
 
 	while (tmp->next != NULL)
 	{
