@@ -47,7 +47,7 @@ void err(int error_code, char *line, stack_t *stack,
 			fprintf(stderr, "L%d: can't sub, stack too short\n", ln);
 			break;
 		case 11:
-			printf(stderr, "L%d: can't pchar, value out of range\n", ln);
+			fprintf(stderr, "L%d: can't pchar, value out of range\n", ln);
 			break;
 		default:
 			break;
