@@ -80,6 +80,7 @@ void sub(stack_t **stack, unsigned int line_number)
 */
 void divide(stack_t **Stack, unsigned int line_number)
 {
+
 	stack_t *temp;
 	unsigned int len = 0;
 
